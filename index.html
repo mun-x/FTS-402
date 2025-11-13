@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Project Title</title>
+  <title>FTS-402</title>
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.16.0/cdn/themes/light.css" />
@@ -39,16 +39,16 @@
 
     <!-- This is the team member component use to display details about your team members -->
     <div class="team-member-wrapper">
-      <team-member avatar="assets/blackranger.png" name="Black" department="Mechanical Engineering"
+      <team-member avatar="assets/mxranger.png" name="Lee Mun Xuan" department="Mechanical Engineering"
+        year="A0257408Y"></team-member>
+      <team-member avatar="assets/yellowranger.png" name="Aditya Satish Nalini" department="Mechanical Engineering"
         year="1993"></team-member>
-      <team-member avatar="assets/yellowranger.png" name="Yellow" department="Computer Engineering"
-        year="1993"></team-member>
-      <team-member avatar="assets/redranger.png" name="Red" department="Electrical Engineering"
-        year="1993"></team-member>
-      <team-member avatar="assets/pinkranger.png" name="Pink" department="Biomedical Engineering"
+      <team-member avatar="assets/atifranger.png" name="Atif Nainar Hussain" department="Mechanical Engineering"
+        year="A0252354J"></team-member>
+      <!-- <team-member avatar="assets/pinkranger.png" name="Pink" department="Biomedical Engineering"
         year="1993"></team-member>
       <team-member avatar="assets/blueranger.png" name="Blue" department="Chemical Engineering"
-        year="1993"></team-member>
+        year="1993"></team-member> -->
     </div>
 
     <!-- This is a divide from the shoelace library for aesthetic purpose -->
@@ -57,144 +57,356 @@
     <!-- This is the table-of-content component use to define all of the link directly to each section -->
     <div class="table-of-content">
       <h2>Table of Contents</h2>
-      <sl-tree>
-        <sl-tree-item expanded>
-          <a href="#section-header-1">1. Section Header 1</a>
-          <sl-tree-item>
-            <a href="#sub-section-1-header-1">1.1. Sub-section Header 1</a>
-          </sl-tree-item>
-          <sl-tree-item>
-            <a href="#sub-section-1-header-2">1.2. Sub-section Header 2</a>
-          </sl-tree-item>
+
+        <sl-tree-item>
+          <a href="#acknowledgements">Acknowledgements</a>
         </sl-tree-item>
 
+        <sl-tree-item>
+          <a href="#summary">Summary</a>
+        </sl-tree-item>
+        
+
         <sl-tree-item expanded>
-          <a href="#section-header-2">2. Section Header 1</a>
+          <a href="#section-header-1">1. Objective & Scope</a>
+          <sl-tree-item>
+            <a href="#sub-section-1-header-1">1.1. Context of Problem</a>
+          </sl-tree-item>
+        </sl-tree-item> 
+
+        <sl-tree-item>
+          <a href="#section-header-2">2. Methodology: Evaluation of Donor Components</a>
+        </sl-tree-item>
+
+      <!--
+        <sl-tree-item expanded>
+          <a href="#section-header-2">2. Methodology</a>
           <sl-tree-item>
             <a href="#sub-section-2-header-1">2.1. Sub-section Header 1</a>
           </sl-tree-item>
           <sl-tree-item>
             <a href="#sub-section-2-header-2">2.2. Sub-section Header 2</a>
           </sl-tree-item>
+        </sl-tree-item> 
+      -->
+
+        <sl-tree-item expanded>
+          <a href="#section-header-3">3. Concept Development</a>
+          <sl-tree-item>
+            <a href="#sub-section-3-header-1">A. Chassis Concept Exploration</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#sub-section-3-header-2">B. Fairing Concept Exploration</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#sub-section-3-header-3">3.1 Concept Selection</a>
+          </sl-tree-item>
         </sl-tree-item>
+
+        <sl-tree-item expanded> 
+          <a href="#section-header-4">4. Prototypes</a>
+          <sl-tree-item>
+            <a href="#sub-section-4-header-1">A. Chassis Prototypes</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#sub-section-3-header-2">B. Fairing Prototypes</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#sub-section-3-header-3">3.1 Concept Selection</a>
+          </sl-tree-item>
+        </sl-tree-item>
+
+        <sl-tree-item expanded> 
+          <a href="#section-header-5">4. Prototypes</a>
+          <sl-tree-item>
+            <a href="#sub-section-5-header-1">5.1 Load Cases</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#sub-section-5-header-2">5.2 Finite ELement Analysis (FEA)</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#sub-section-5-header-3">lalalalala</a>
+          </sl-tree-item>
+        </sl-tree-item>
+
+        <sl-tree-item expanded> 
+          <a href="#section-header-6">6. Limitation & Mitigation Strategies</a>
+          <sl-tree-item>
+            <a href="#sub-section-6-header-1">6.1 Chassis</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#sub-section-6-header-2">6.2 Fairing</a>
+          </sl-tree-item>
+        </sl-tree-item>
+
+        <sl-tree-item expanded> 
+          <a href="#section-header-7">7. Project Plan</a>
+          <sl-tree-item>
+            <a href="#sub-section-7-header-1">7.1 Fulfilment of Deliverables</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#sub-section-7-header-2">7.2 Gantt Chart</a>
+          </sl-tree-item>
+        </sl-tree-item>
+
+        
 
         <sl-tree-item>
           <a href="#references">References</a>
         </sl-tree-item>
+
       </sl-tree>
     </div>
+    
     <sl-divider></sl-divider>
 
-    <div>
-
-      <!-- This is an example of what a section might look like -->
-      <div id="section-header-1">
-        <h2> 1. Section Header 1 </h2>
+ <!-- below the summary is written by me -->
+      <div id="acknowledgements">
+        <h2> Acknowledgements </h2>
+        <p>  
+          We would like to express our sincere gratitude to Mr Lim Hong Wee, our project supervisor, for his continuous guidance, valuable feedback, and encouragement throughout the development of this project. His technical advice and insights greatly enhanced the quality of our work.
+        </p> 
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna
-          aliqua. Tincidunt ornare massa eget egestas. At tellus at urna condimentum mattis pellentesque id nibh tortor.
-          Elementum sagittis vitae et leo duis ut diam. Morbi tristique senectus et netus et malesuada fames.
-          Suspendisse
-          ultrices gravida dictum fusce ut placerat orci. Risus nullam eget felis eget nunc lobortis mattis aliquam
-          faucibus
-          (Brody, 2007). Eget sit amet tellus cras adipiscing enim eu turpis egestas. Aliquet nibh praesent tristique
-          magna
-          sit amet purus. Adipiscing bibendum est ultricies integer quis auctor elit sed. Fermentum et sollicitudin ac
-          orci
-          phasellus egestas tellus rutrum. At in tellus integer feugiat scelerisque varius morbi enim nunc. Volutpat
-          blandit
-          aliquam etiam erat velit scelerisque in. Id diam maecenas ultricies mi eget mauris pharetra et. Nec dui nunc
-          mattis
-          enim ut tellus elementum sagittis vitae.
+          Special thanks to our industry partner, Red Dot Mobility, and in particular to Mr Chun Lei, for his professional support and practical input regarding powertrain systems of electric vehicles, battery integration, and real-world e-bike design considerations. His expertise provided an important bridge between academic theory and industry application.
+        </p> 
+        </div>
+    <sl-divider></sl-divider>
+
+      <div id="summary">
+        <h2> Summary </h2>
+        <p>  
+          This project focuses on the conversion of conventional ICE sports bikes into electric sports bikes, or referred to as E-Bike in this report. The primary objective is to design and develop a new chassis and fairing system that accommodates the EV powertrain specified by our industry partner, Red Dot Mobility.
         </p>
+        <p>
+          The redesigned chassis is engineered to integrate key electronic components such as the motor, controller, and battery pack, while optimising structural integrity. Building upon the chassis foundation, the subsequent design phase explores the development of the fairing system to enhance airflow management, aerodynamics and visual appeal.
+        </p>  
+        <p>
+        This project, undertaken over two academic semesters by a team of three mechanical engineering students, aims to employ FEA and CFD to validate the structural and aerodynamic performance of the E-Bike design.
+        </p>
+      </div>
+    <sl-divider></sl-divider>
+
+
+      <!-- This is an example of what a section might look like, but i edited the contents -->
+      <div id="section-header-1">
+        <h2> 1. Objective & Scope </h2>
+        <p>
+          This project addresses the challenge of mechanically realising the conversion of an existing 650cc ICE sports bike to electric drive using a fixed powertrain from Red Dot Mobility. 
+          The specification of the powertrain, which includes motor, controller and battery, establishes a fixed set of geometric, thermal, and load-bearing constraints. 
+          Within these parameters, the project focuses on the structural and aerodynamic redesign necessary to integrate these components effectively.
+        </p>
+        
       </div>
 
       <div id="sub-section-1-header-1">
-        <h3>1.1 Sub-section Header 1</h3>
+        <h3>1.1 Context of Problem</h3>
         <p>
-          Ultrices dui sapien eget mi. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Dolor purus non enim
-          praesent elementum facilisis. Lacus vestibulum sed arcu non odio euismod lacinia at. Metus aliquam eleifend mi
-          in nulla. Lacus sed viverra tellus in hac habitasse platea. Varius quam quisque id diam vel quam elementum
-          pulvinar. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Diam ut venenatis tellus in metus
-          vulputate. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Venenatis lectus magna
-          fringilla
-          urna. In nisl nisi scelerisque eu ultrices. Velit egestas dui id ornare arcu odio ut sem nulla. Quam id leo in
-          vitae. Egestas congue quisque egestas diam in arcu cursus euismod quis. Porttitor leo a diam sollicitudin
-          tempor
-          id eu nisl.
+          Global adoption of electric two-wheelers is accelerating with market expectations to reach US$150.3 billion by 2034, driven by policy shifts toward low-emission transport (Yahoo, 2025). 
+          Singapore’s Green Plan 2030 similarly targets a fully cleaner-energy vehicle fleet by 2040 (Land Transport Authority, 2025). 
+          Despite this momentum, the local electric motorcycle sector remains small and segmented.
         </p>
+        <p>
+          At the premium end of Singapore’s electric motorcycle market, Energica is available through a sole distributor, Ifyni Pte Ltd, and Zero Motorcycles is represented exclusively by Mah Pte Ltd (Ifyni, 2025; Mah, 2025). 
+          These arrangements often lead to limited availability and high price points, positioning both brands as niche products for affluent enthusiasts. Meanwhile, local manufacturers such as Scorpio Electric and ION Mobility target commuters to mid-performance segments, focusing on everyday city use rather than the sporty, high-performance category.
+          This leaves a clear gap in the local market: riders who want a sporty electric motorcycle face premium prices and limited supply at the top end, while commuter models fall short on performance and feel. 
+          Working with Red Dot Mobility, our project addresses this middle space by targeting an electric sports bike that delivers performance and handling at a reachable price, with reliable local support in Singapore.
+        </p>
+        <p><b>
+          Problem Statement:
+        </b></p>
+        <p><i>
+          How can we convert an existing internal-combustion sports motorcycle into an electric version within the practical limits of cost, time, and manpower while ensuring safety, functionality, and integration of fixed components supplied by Red Dot Mobility.
+        </i></p>
       </div>
 
-      <div id="sub-section-1-header-2">
-        <h3>1.2 Sub-section Header 2</h3>
+<sl-divider></sl-divider>
+
+      <div id="section-header-2">
+        <h2>2. Methodology: Evaluation of Donor Components</h2>
         <p>
-          Fermentum dui faucibus in ornare quam viverra orci. Donec ultrices tincidunt arcu non sodales. A diam maecenas
-          sed enim ut sem viverra. Semper viverra nam libero justo laoreet sit. Mi sit amet mauris commodo quis. Auctor
-          augue mauris augue neque gravida in fermentum et. Auctor elit sed vulputate mi sit amet. Maecenas pharetra
-          convallis posuere morbi leo urna. Sem nulla pharetra diam sit amet nisl. Id nibh tortor id aliquet lectus.
-          Nibh
-          nisl condimentum id venenatis a condimentum vitae sapien. Convallis posuere morbi leo urna molestie at
-          elementum.
+          This section provides a summary of our evaluation and decisions on whether each major component should be retained or redesigned for an electric conversion. 
+          The assessment considers design constraints, manufacturability, and ease of sourcing. 
+      
+        </p>
+        <p>
+          For the full systematic evaluation and decision-making process, see Appendix A.
         </p>
 
-        <!-- This is an example of how you might use the image component -->
+        <image-component tag="image" source="assets/methodology_table_1.png"
+          subtitle="Table 1.1: Summary of existing major components evaluation"></image-component>
+        
+        <p>
+          To ground this assessment, we conducted an on-site visit to Red Dot Mobility’s workshop, measured the donor components to verify the CAD drawings given, and photographed interfaces for later reference.
+        </p>
+        
+        <image-component tag="image" source="assets/RDM_ICE_workshop.png"
+          subtitle="Figure 1.1: Red Dot Mobility’s workshop, featuring their ICE sports bike"></image-component>
+    
+
+        
+
+        <!-- This is an example of how you might use the image component 
         <image-component tag="image" source="assets/requirement.png"
-          subtitle="Image 1: iDP suggested pathway"></image-component>
-      </div>
+          subtitle="Figure 1: iDP suggested pathway"></image-component> -->
+      
     </div>
 
-
-    <br />
     <br />
     <sl-divider></sl-divider>
     <div>
-      <div id="section-header-2">
-        <h2>2. Section Header 2</h2>
+      <div id="section-header-3">
+        <h2>3. Concept Development</h2>
         <p>
-          Ornare arcu dui vivamus arcu felis bibendum ut tristique et. Mi proin sed libero enim sed faucibus turpis in
-          eu. Odio ut sem nulla pharetra diam sit. Nibh cras pulvinar mattis nunc sed blandit libero. Lacus sed viverra
-          tellus in hac habitasse platea dictumst vestibulum. At augue eget arcu dictum varius duis. Mauris ultrices
-          eros in cursus turpis massa (Lindberg, 1967). Libero nunc consequat interdum varius sit amet mattis. Ut ornare
-          lectus sit amet est placerat in egestas erat. Elementum curabitur vitae nunc sed. Proin nibh nisl condimentum
-          id venenatis a condimentum vitae sapien (Chamberlin et al., 2008). Vitae tempus quam pellentesque nec nam
-          aliquam sem.
+          The subsystem review concluded that redesign efforts are necessary only for the chassis and fairing assemblies. 
+          A summary of the corresponding design approach is provided in this section.
         </p>
       </div>
 
-      <div id="sub-section-2-header-1">
-        <h3>2.1. Sub-section Header 1</h3>
+      <div id="sub-section-3-header-1">
+        <h3>A. Chassis Concept Exploration</h3>
         <p>
-          Pellentesque nec nam aliquam sem et tortor consequat. Et netus et malesuada fames ac turpis egestas maecenas.
-          Eu tincidunt tortor aliquam nulla facilisi. Nunc aliquet bibendum enim facilisis gravida. Elementum pulvinar
-          etiam non quam lacus (Moll et al., 2011; Parker & Fox, 2010). Blandit cursus risus at ultrices mi. Arcu dui
-          vivamus arcu felis bibendum ut tristique. Porttitor rhoncus dolor purus non enim praesent elementum facilisis.
-          Mauris in aliquam sem fringilla. Non quam lacus suspendisse faucibus. Tristique senectus et netus et malesuada
-          fames ac. <a href="#image">Link to the image above</a>
+          lalallalalalallalallaalala
+          <image-component tag="image" source="assets/chassis_conceptselection.png"
+          subtitle="Table 3.2: Chassis Structure and Material concept selection"></image-component>
         </p>
 
-        <!-- This is an example of how you might use the video component -->
-        <video-component tag="rick" source="https://www.youtube.com/embed/dQw4w9WgXcQ"
-          subtitle="Video: Never gonna give you up?"></video-component>
-      </div>
-
-      <div id="sub-section-2-header-2">
-        <h3>2.2. Sub-section Header 2</h3>
+      <div id="sub-section-3-header-2">
+        <h3>B. Fairing Concept Exploration</h3>
         <p>
-          Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Dignissim convallis aenean et tortor at
-          risus viverra adipiscing. Facilisi nullam vehicula ipsum a arcu cursus. Adipiscing elit pellentesque
-          habitant
-          morbi tristique senectus et netus. Turpis massa tincidunt dui ut ornare lectus. Suspendisse sed nisi lacus
-          sed. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Ut ornare lectus sit amet est
-          placerat in egestas. Magna fringilla urna porttitor rhoncus. Imperdiet dui accumsan sit amet.
-        </p>
+          llalalallalalalallalalalla
+          <image-component tag="image" source="assets/fairing_conceptselection.png"
+          subtitle="Table 3.2: Fairing Structure and Material concept selection"></image-component>
 
-        <!-- This is an example of how you might use the table component -->
-        <table-component subtitle="Table: Demo table">
-          <div id="table-1"></div>
-        </table-component>
+      <div id="sub-section-3-header-3">
+        <h3>3.1 Concept Selection</h3>
+        <p>
+          The design space for the chassis and fairing was systematically investigated using a Morphological Matrix. 
+          By mapping and combining functional alternatives, this method ensured that the final selected solution (shown in blue) reflects a thorough evaluation of viable configurations.
+        </p>
+        <image-component tag="image" source="assets/concept_selection_table_edited.png"
+          subtitle="Table 3.3: Morphological Matrix for concept selection"></image-component>
+
+
       </div>
     </div>
+
+<sl-divider></sl-divider>
+
+    <div>
+      <div id="section-header-4">
+        <h2>4. Prototypes </h2>
+        <p>
+          The subsystem review concluded that redesign efforts are necessary only for the chassis and fairing assemblies. 
+          A summary of the corresponding design approach is provided in this section.
+        </p>
+        <div id="sub-section-4-header-1">
+        <h3>A. Chassis Prototypes </h3>
+        <p>
+          To develop the initial chassis prototypes, the original ICE sports bike’s CAD model was used as the geometric baseline, with critical dimensions confirmed against the donor bike during our workshop session at Red Dot Mobility. These measurements established the swingarm pivot, rear damper mount, and front fork mount as the fixed anchor points of the vehicle. Because these interfaces are retained, the overall geometry—including wheelbase, rake, and trail—remains unchanged, preserving the motorcycle’s validated handling characteristics and dynamic performance. 
+        </p>
+        <p>   
+          Hence, the chassis is redesigned around these constraints whilst optimising packaging efficiency, manufacturability, and adequate structural support of the electric powertrain.
+        </p>
+         <image-component tag="image" source="assets/chassis_prototypes_horizontal.png"
+          subtitle="Table 4.1: Chassis Design Prototypes"></image-component>
+        <p>
+          Using Pugh Matrix, we compared the 3 chassis prototypes across five criteria.
+        </p>
+        <image-component tag="image" source="assets/chassis_prototypes_pughmatrix.png"
+          subtitle="Table 4.2: Weighted Pugh Matrix: Chassis Design Prototypes"></image-component>
+        <p>
+        <p>
+          Prototype 1 was selected for further development as it attained the highest overall weighted score, performing strongly in battery space, weight, fabrication ease, and cost. 
+          Although its structural rigidity is comparatively lower, this shortcoming is recognised and will be addressed through targeted refinement and iterative design in subsequent stages.
+        </p>
+        <div id="sub-section-4-header-2">
+        <h3> Iteration Process </h3>
+        <image-component tag="image" source="assets/prototype_iterations.png"
+          subtitle="Table 4.3: Iteration Process for Chassis and Fairing"></image-component>
+        
+        <p>
+          to edit****:After positioning the specified major components—motor, motor controller, and radiator—the remaining space for remaining components can be seen outlined in red. Approximating the battery enclosure as a rectangular prism gives maximum dimensions of 400 × 240 × 490 mm, or 47 L. Using the specified EP6575175VVP pouch-cell class and referencing typical pack-level volumetric energy densities for modern NCM pouch assemblies, ~180–250 Wh/L, (BloombergNEF, 2023; EVE Energy, 2023), this space is expected to support approximately 10–12 kWh of usable energy. This remains a preliminary estimate that will be refined once enclosure structures are finalised in Semester 2.
+          In market context, a 10–12 kWh pack places the converted motorcycle above local commuter-class electric models such as the Scorpio Electric X1 and ION Mobility M1-S (4–6 kWh), but below premium electric sports motorcycles such as the Zero SR/F and Energica Ego+ (17–21 kWh). The partner-supplied EMRAX 228 motor—a compact axial-flux PMSM rated up to 124 kW and 220 Nm (EMRAX, 2024)—indicates that a mid-capacity pack within this range remains mechanically and thermally feasible for the intended performance envelope.
+          These values serve as a work-in-progress basis for structural integration and will be updated as detailed design progresses.
+        </p>
+          <image-component tag="image" source="assets/chassis_integrated_components.png"
+          subtitle="Table 4.4: Chassis' Final Iteration with major components "></image-component>
+      
+      </div>
+
+      <sl-divider></sl-divider>
+
+      <div>
+      <div id="section-header-5">
+        <h2>5. Testing & Analysis </h2>
+
+      <div id="sub-section-5-header-1"></div>
+        <h3>5.1 Load Cases </h3>
+        <p>
+          To evaluate the structural behaviour of the redesigned chassis under representative operating conditions, 3 standard static-equivalent load cases were selected: static loading, 1 g braking, and 3 g bump. 
+          These cases are widely used in early-stage motorcycle chassis assessment to approximate gravitational, longitudinal, and vertical impact loads in a controlled modelling environment (Cossalter, 2006).
+        </p>
+         <image-component tag="image" source="assets/loadcases.png"
+          subtitle="Table 5.1: Identified 3 Load Cases "></image-component>
+
+      <div id="sub-section-5-header-2"></div>
+        <h3>5.2 Finite Element Analysis (FEA) </h3>
+        <p>
+          To evaluate the structural behaviour of the redesigned chassis under representative operating conditions, 3 standard static-equivalent load cases were selected: static loading, 1 g braking, and 3 g bump. 
+          These cases are widely used in early-stage motorcycle chassis assessment to approximate gravitational, longitudinal, and vertical impact loads in a controlled modelling environment (Cossalter, 2006).
+        </p>
+         <image-component tag="image" source="assets/loadcases.png"
+          subtitle="Table 5.1: Identified 3 Load Cases "></image-component>
+
+          <sl-divider></sl-divider>
+      <div>
+      <div id="section-header-6">
+        <h2>6. Limitation and Mitigation Strategies</h2>
+        <p>
+          As this report represents the interim stage of the project, several aspects of the design remain under development. 
+          The current work has focused on establishing the structural basis of the chassis through material selection and static FEA, which is necessary before dependent subsystems—such as the fairing, mounting features, and detailed packaging—can be advanced. 
+          The following subsections outline the principal limitations identified to date and the corresponding strategies planned to address them in the next phase of the project.
+        </p>
+      <div id="sub-section-6-header-1">
+        <h3>6.1 Chassis</h3>
+        <p>
+          The current tubular chassis design, while structurally validated, requires multiple welding jigs to hold tubes at precise angles. 
+          To reduce manufacturing cost and complexity, the design will adopt simplified, sequentially assembled tube preforms that can be laid out on a welding table, reducing the need for complex 3D fixtures (Günther et al., 2020).
+        </p>
+        <p>
+          Static FEA alone is insufficient for analysis of the chassis, as it assumes ideal geometry, material uniformity, and fixed boundary conditions that overlook weld distortion and dynamic effects. 
+          Hence, the manufactured frame will be validated using a strain-gauge rig replicating the static, braking, and bump loads (Nguyen et al., 2018). 
+          Measured principal strains will be compared with FEA results, with deviations within 10–20 percent considered acceptable for model correlation. 
+          While ISO 4210-6 is a bicycle frame and fork standard, its fixture and load-introduction concepts will be adapted only as methodological guidance for rig design.
+        </p>
+
+      <div id="sub-section-6-header-2">
+        <h3>6.2 Fairing</h3>
+        <p>
+          The fairing system requires further refinement, as the current design is a minimalist, wrap-around which may not optimise aerodynamic performance or thermal management. 
+          Prior studies highlight that fairing geometry directly affects drag, lift, and component cooling (Winski et al, 2022). 
+          Consequently, CFD simulations will be undertaken to evaluate airflow distribution and cooling performance, guiding iterative improvements in fairing shape and vent placement.
+        </p>
+
+
+<sl-divider></sl-divider>
+      <div id="section-header-7">
+        <h2>7. Project Plan</h2>
+          <p>
+            At this midpoint of the project, effort has centred on completing the chassis’ structural assessment, including material evaluation and static FEA. 
+            Fairing development and detailed component mounting will proceed in the next semester.
+          </p>
+      <div id="sub-section-7-header-1">
+        <h3>7.1 Fulfilment of Deliverables</h3>
+
+      <div id="sub-section-7-header-2">
+        <h3>7.2 Gantt Chart</h3>
+        <p>
+          Our project timeline is summarised in <i>Figure 7.1</i>.
+        </p>
+        <image-component tag="image" source="assets/ganttchart.png"
+          subtitle="Figure 7.1: Project Timeline in Gantt Chart "></image-component>
+
 
     <!-- This is an example of how you can use the references component to create references -->
     <div id="references" class="references">
@@ -230,3 +442,7 @@
 </body>
 
 </html>
+        <!-- This is an example of how you might use the table component -->
+        <table-component subtitle="Table: Demo table">
+          <div id="table-1"></div>
+        </table-component>
