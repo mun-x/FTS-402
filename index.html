@@ -350,13 +350,67 @@
           subtitle="Table 5.1: Identified 3 Load Cases "></image-component>
 
       <div id="sub-section-5-header-2"></div>
-        <h3>5.2 Finite Element Analysis (FEA) </h3>
+        <h3>5.2 FEA Methodology </h3>
         <p>
-          To evaluate the structural behaviour of the redesigned chassis under representative operating conditions, 3 standard static-equivalent load cases were selected: static loading, 1 g braking, and 3 g bump. 
-          These cases are widely used in early-stage motorcycle chassis assessment to approximate gravitational, longitudinal, and vertical impact loads in a controlled modelling environment (Cossalter, 2006).
+          Chassis Iteration 3 is the initial model to be evaluated under the 3 load cases: static vertical loading, 1 g braking and 3 g bump. 
+          These conditions are selected to represent typical nominal and peak loads experienced by lightweight motorcycle frames and follow the quasi-static design practice commonly applied in early-stage chassis development (Cossalter et. al., 2006). 
+          Our objective is to ensure the chassis meets accepted safety-factor targets for preliminary structural design, typically around 2–3 for nominal loads (static vertical load and 1 g braking) and at least 1.0 for worst-case peak events (3 g bump), consistent with established mechanical design guidelines (Budynas et. al., 2001). 
+          This baseline evaluation provides the reference from which further refinements will be introduced in later iterations of the chassis design.
         </p>
-         <image-component tag="image" source="assets/loadcases.png"
+         <image-component tag="image" source="assets/fea_loadcases.png"
           subtitle="Table 5.1: Identified 3 Load Cases "></image-component>
+
+          <h3>Assumptions</h3>
+          <ol>
+            <li> 
+              <p>No residual welding distortion or temperature effects</p>
+              The frame is modelled with nominal geometry, without weld-induced residual stresses or thermal loads. 
+              Welds typically retain locked-in stresses that shift local stress fields and influence stiffness and fatigue (TWI Global, Residual Stress FAQ). 
+              Thermo-mechanical weld modelling is beyond early sizing and can be added later if required.
+            </li>
+            <li> 
+              <p>Fork, swingarm, and damper treated as rigid attachments</p>
+              Interfaces at the headstock, swingarm pivot, and suspension mounts are idealised as rigid to isolate the frame’s structural stiffness. 
+              Physical torsion and bending tests similarly use stiff fixtures (Boccioni, 2005). 
+              The damper is assumed bottomed out and effectively rigid, representing a worst-case condition (WIT Press, 2005).
+            </li>
+            <li>
+              <p>Dynamic events approximated as equivalent static loads</p>
+              Bump and braking cases are dynamic, but for early design they are represented using peak static equivalents of 3 g and 1 g respectively. 
+              This quasi-static simplification is widely used in preliminary chassis designs. 
+              A quasi-static simplification treats inherently dynamic events, such as bumps or braking, as peak static loads so that their worst-case structural effects can be evaluated without modelling time-dependent behaviour (Cossalter, 2006).
+            </li>
+          </ol>
+
+      <div id="sub-section-5-header-3"></div>
+        <h3>5.3 FEA - Material Selection </h3>
+        
+        <h3>Aluminium</h3>
+
+        <image-component tag="image" source="assets/aluminium_results.png"
+          subtitle="Table 5.??: Aluminium FEA results "></image-component>
+
+        <h3>Steel</h3>
+        <image-component tag="image" source="assets/steel_results.png"
+          subtitle="Table 5.??: Steel FEA results "></image-component>
+
+
+      <div id="sub-section-5-header-4"></div>
+        <h3>5.4 FEA - Chassis Iteration Process </h3>
+           <image-component tag="image" source="assets/chassis_latest_fea_results.png"
+          subtitle="Table 5.??: Chassis Iteration 5 FEA results "></image-component>
+
+
+      <div id="sub-section-5-header-9"></div>
+        <h3>5.?? Summary </h3>
+
+          <p>
+            lalalalalalalallala
+          </p>
+          
+           <image-component tag="image" source="assets/fea_summary_chassis.png"
+          subtitle="Table 5.??: Summary of Chassis Iterations through FEA Analysis"></image-component>
+
 
           <sl-divider></sl-divider>
       <div>
@@ -404,9 +458,11 @@
         <p>
           Our project timeline is summarised in <i>Figure 7.1</i>.
         </p>
-        <image-component tag="image" source="assets/ganttchart.png"
+        <image-component tag="image" source="assets/onlinegantt.png"
           subtitle="Figure 7.1: Project Timeline in Gantt Chart "></image-component>
 
+
+        
 
     <!-- This is an example of how you can use the references component to create references -->
     <div id="references" class="references">
@@ -429,6 +485,18 @@
       </ul>
     </div>
   </div>
+
+<sl-divider></sl-divider>
+
+
+      <h3>Appendix __: Donor Components Detailed Evaluation</h3>
+        <image-component tag="image" source="assets/appendix_donor_components.png"
+          subtitle=" "></image-component>
+      <h3>Appendix __: FEA Beam, Shell, Mixed Mesh</h3>
+        <image-component tag="image" source="assets/appendix_beam_mesh.png"
+          subtitle=" "></image-component>
+
+
 
   <!-- This is the code to display the scroll to top button for ergonomic -->
   <!-- You can leave it as it is, or if you don't like its aesthetics you can also just delete it, -->
