@@ -42,7 +42,7 @@
       <team-member avatar="assets/mxranger.png" name="Lee Mun Xuan" department="Mechanical Engineering"
         year="A0257408Y"></team-member>
       <team-member avatar="assets/adityaranger.png" name="Aditya Satish Nalini" department="Mechanical Engineering"
-        year="1993"></team-member>
+        year="A0244516H"></team-member>
       <team-member avatar="assets/atifranger.png" name="Atif Nainar Hussain" department="Mechanical Engineering"
         year="A0252354J"></team-member>
       <!-- <team-member avatar="assets/pinkranger.png" name="Pink" department="Biomedical Engineering"
@@ -65,7 +65,6 @@
         <sl-tree-item>
           <a href="#summary">Summary</a>
         </sl-tree-item>
-        
 
         <sl-tree-item expanded>
           <a href="#section-header-1">1. Objective & Scope</a>
@@ -119,7 +118,7 @@
             <a href="#sub-section-5-header-1">5.1 Load Cases</a>
           </sl-tree-item>
           <sl-tree-item>
-            <a href="#sub-section-5-header-2">5.2 Finite ELement Analysis (FEA)</a>
+            <a href="#sub-section-5-header-2">5.2 FEA - Methodology</a>
           </sl-tree-item>
           <sl-tree-item>
             <a href="#sub-section-5-header-3">5.3 FEA - Material Selection</a>
@@ -178,10 +177,12 @@
       <div id="summary">
         <h2> Summary </h2>
         <p>  
-          This project focuses on the conversion of conventional ICE sports bikes into electric sports bikes, or referred to as E-Bike in this report. The primary objective is to design and develop a new chassis and fairing system that accommodates the EV powertrain specified by our industry partner, Red Dot Mobility.
+          This project focuses on the conversion of conventional ICE sports bikes into electric sports bikes, or referred to as E-Bike in this report. 
+          The primary objective is to design a new chassis and fairing system that accommodates the EV powertrain specified by our industry partner, Red Dot Mobility.
         </p>
         <p>
-          The redesigned chassis is engineered to integrate key electronic components such as the motor, controller, and battery pack, while optimising structural integrity. Building upon the chassis foundation, the subsequent design phase explores the development of the fairing system to enhance airflow management, aerodynamics and visual appeal.
+          The redesigned chassis is engineered to integrate key electronic components such as the motor, controller, and battery pack, while optimising structural integrity. 
+          Building upon the chassis foundation, subsequent design phase explores the development of the fairing system with aerodynamics in mind.
         </p>  
         <p>
         This project, undertaken over two academic semesters by a team of three mechanical engineering students, aims to employ FEA and CFD to validate the structural and aerodynamic performance of the E-Bike design.
@@ -194,7 +195,7 @@
       <div id="section-header-1">
         <h2> 1. Objective & Scope </h2>
         <p>
-          This project addresses the challenge of mechanically realising the conversion of an existing 650cc ICE sports bike to electric drive using a fixed powertrain from Red Dot Mobility. 
+          This project addresses the challenge of mechanically realising the conversion of an existing 650cc Internal Combustion Engine (ICE) sports bike to electric drive using a fixed powertrain from Red Dot Mobility. 
           The specification of the powertrain, which includes motor, controller and battery, establishes a fixed set of geometric, thermal, and load-bearing constraints. 
           Within these parameters, the project focuses on the structural and aerodynamic redesign necessary to integrate these components effectively.
         </p>
@@ -218,7 +219,7 @@
           Problem Statement:
         </b></p>
         <p><i>
-          How can we convert an existing internal-combustion sports motorcycle into an electric version within the practical limits of cost, time, and manpower while ensuring safety, functionality, and integration of fixed components supplied by Red Dot Mobility.
+          How can we convert an existing ICE sports motorcycle into an electric version within the practical limits of cost, time, and manpower while ensuring safety, functionality, and integration of fixed components supplied by Red Dot Mobility.
         </i></p>
       </div>
 
@@ -227,7 +228,7 @@
       <div id="section-header-2">
         <h2>2. Methodology: Evaluation of Donor Components</h2>
         <p>
-          This section provides a summary of our evaluation and decisions on whether each major component should be retained or redesigned for an electric conversion. 
+          This section provides a summary of our evaluation and decision on whether each major component should be retained or redesigned for the electric conversion. 
           The assessment in <i>Table 2.1</i> considers design constraints, manufacturability, and ease of sourcing. 
       
         </p>
@@ -260,15 +261,15 @@
       <div id="section-header-3">
         <h2>3. Concept Development</h2>
         <p>
-          The subsystem review concluded that redesign efforts are necessary only for the chassis and fairing assemblies. 
-          A summary of the corresponding design approach is provided in this section.
+          The subsystem review in the earlier section concluded that redesign efforts are necessary only for the chassis and fairing assemblies. 
+          In this section, we will detail the chassis and fairing concept exploration.
         </p>
       </div>
 
       <div id="sub-section-3-header-1">
         <h3>A. Chassis Concept Exploration</h3>  
         <p>
-          The evaluation structure and material of chassis through a weighted decision matrix can be seen in <i>Table 3.1</i>
+          The concept evaluation of the structure and material of chassis can be seen in <i>Table 3.1</i>
         </p>
           <image-component tag="image" source="assets/chassis_conceptselection.png"
           subtitle="Table 3.1: Chassis Structure and Material concept selection"></image-component>
@@ -286,7 +287,7 @@
       <div id="sub-section-3-header-2">
         <h3>B. Fairing Concept Exploration</h3>
         <p>
-          The evaluation structure and material of fairing through a weighted decision matrix can be seen in <i>Table 3.2</i>
+          The concept evaluation of the structure and material of fairing can be seen in <i>Table 3.2</i>
         </p>  
           <image-component tag="image" source="assets/fairing_conceptselection.png"
           subtitle="Table 3.2: Fairing Structure and Material concept selection"></image-component>
@@ -302,7 +303,7 @@
         <h3>3.1 Concept Selection</h3>
         <p>
           The design space for the chassis and fairing was systematically investigated using a Morphological Matrix in <i>Figure 3.3</i>. 
-          By mapping and combining functional alternatives, this method ensured that the selected solution (shown in blue) reflects a thorough evaluation of viable configurations.
+          By mapping and combining functional alternatives, the selected solution (shown in blue) reflects a thorough evaluation of viable configurations.
         </p>
           <image-component tag="image" source="assets/concept_selection_table_edited.png"
           subtitle="Table 3.3: Morphological Matrix for concept selection"></image-component>
@@ -310,7 +311,7 @@
           A summary of the key justifications for our selected solution can be seen in <i>Table 3.4</i> 
         </p>
           <image-component tag="image" source="assets/concept_selection_justification.png"
-          subtitle="Table 3.4: Summary of justifications for final concept selection"></image-component>
+          subtitle="Table 3.4: Summary of key justifications for selected solution"></image-component>
 
 
       </div>
@@ -321,10 +322,7 @@
     <div>
       <div id="section-header-4">
         <h2>4. Prototypes </h2>
-        <p>
-          The subsystem review concluded that redesign efforts are necessary only for the chassis and fairing assemblies. 
-          A summary of the corresponding design approach is provided in this section.
-        </p>
+        <p>In this section, we will explore the different prototypes created through our development process.</p>
         <div id="sub-section-4-header-1">
         <h3>Chassis Prototypes</h3>
         <p>
@@ -337,10 +335,10 @@
          <image-component tag="image" source="assets/chassis_prototypes_horizontal.png"
           subtitle="Table 4.1: Chassis Design Prototypes"></image-component>
         <p>
-          Using Pugh Matrix, we compared the 3 chassis design prototypes across five criteria.
+          Using the Weighted Decision Matrix, we compared the 3 chassis design prototypes across 5 different criterias as seen in <i>Table 4.2</i>.
         </p>
         <image-component tag="image" source="assets/chassis_prototypes_pughmatrix.png"
-          subtitle="Table 4.2: Weighted Pugh Matrix: Chassis Design Prototypes"></image-component>
+          subtitle="Table 4.2: Weighted Decision Matrix: Chassis Design Prototypes"></image-component>
         <p>
         <p>
           Prototype 1 was selected for further development as it attained the highest overall weighted score, performing strongly in battery space, weight, fabrication ease, and cost. 
@@ -348,13 +346,19 @@
         </p>
         <div id="sub-section-4-header-2">
         <h3> Iteration Process </h3>
+        <p>
+          Our iteration process for our selected design chassis, and our initial prototype of fairing can be seen in <i>Table 4.3</i>. 
+        </p>
         <image-component tag="image" source="assets/chassis_iterations_1.png"
           subtitle="Table 4.3: Iteration Process for Chassis and Fairing"></image-component>
         
         <p>
           After positioning the specified major components—motor, motor controller, and radiator—the remaining space for remaining components can be seen in <i>Figure 4.1</i> (outlined in red). 
-          Approximating the battery enclosure as a rectangular prism gives maximum dimensions of 400 × 240 × 490 mm, or 47 L. Using the specified EP6575175VVP pouch-cell class and referencing typical pack-level volumetric energy densities for modern NCM pouch assemblies, ~180–250 Wh/L, (BloombergNEF, 2023; EVE Energy, 2023), this space is expected to support approximately 10–12 kWh of usable energy. This remains a preliminary estimate that will be refined once enclosure structures are finalised in Semester 2.
-          In market context, a 10–12 kWh pack places the converted motorcycle above local commuter-class electric models such as the Scorpio Electric X1 and ION Mobility M1-S (4–6 kWh), but below premium electric sports motorcycles such as the Zero SR/F and Energica Ego+ (17–21 kWh). The partner-supplied EMRAX 228 motor—a compact axial-flux PMSM rated up to 124 kW and 220 Nm (EMRAX, 2024)—indicates that a mid-capacity pack within this range remains mechanically and thermally feasible for the intended performance envelope.
+          Approximating the battery enclosure as a rectangular prism gives maximum dimensions of 400 × 240 × 490 mm, or 47 L. Using the specified EP6575175VVP pouch-cell class, this space is expected to support approximately 10–12 kWh of usable energy. This remains a preliminary estimate that will be refined once enclosure structures are finalised in Semester 2.
+        </p>
+         <p>
+          In market context, a 10–12 kWh pack places the converted motorcycle above local commuter-class electric models such as the Scorpio Electric X1 and ION Mobility M1-S, 4–6 kWh, but below premium electric sports motorcycles such as the Zero SR/F and Energica Ego+, 17–21 kWh (Scorpio, 2025; Ion Mobility 2025; Zero, 2025; Energica, 2025). 
+          The partner-supplied EMRAX 228 motor—a compact axial-flux PMSM rated up to 124 kW and 220 Nm—indicates that a mid-capacity pack within this range remains mechanically and thermally feasible for the intended performance envelope.
           These values serve as a work-in-progress basis for structural integration and will be updated as detailed design progresses.
         </p>
           <image-component tag="image" source="assets/chassis_integrated_components.png"
@@ -367,26 +371,26 @@
       <div>
       <div id="section-header-5">
         <h2>5. Testing & Analysis </h2>
-
+        <p>This section explores our testing and analysis process regarding the chassis design using Finite Element Analysis (FEA) on Solidworks.</p>
       <div id="sub-section-5-header-1"></div>
         <h3>5.1 Load Cases </h3>
         <p>
-          To evaluate the structural behaviour of the redesigned chassis under representative operating conditions, 3 standard static-equivalent load cases were selected: static loading, 1 g braking, and 3 g bump. 
+          To evaluate the structural behaviour of the redesigned chassis under representative operating conditions, 3 standard static-equivalent load cases were selected: static loading, 1 g braking, and 3 g bump, as seen in <i>Table 5.1</i>. 
           These cases are widely used in early-stage motorcycle chassis assessment to approximate gravitational, longitudinal, and vertical impact loads in a controlled modelling environment (Cossalter, 2006).
         </p>
          <image-component tag="image" source="assets/loadcases.png"
-          subtitle="Table 5.1: Identified 3 Load Cases "></image-component>
+          subtitle="Table 5.1: Selected 3 Load Cases "></image-component>
 
       <div id="sub-section-5-header-2"></div>
         <h3>5.2 FEA Methodology </h3>
         <p>
-          Chassis Iteration 3 is the initial model to be evaluated under the 3 load cases: static vertical loading, 1 g braking and 3 g bump. 
-          These conditions are selected to represent typical nominal and peak loads experienced by lightweight motorcycle frames and follow the quasi-static design practice commonly applied in early-stage chassis development (Cossalter et. al., 2006). 
-          Our objective is to ensure the chassis meets accepted safety-factor targets for preliminary structural design, typically around 2–3 for nominal loads (static vertical load and 1 g braking) and at least 1.0 for worst-case peak events (3 g bump), consistent with established mechanical design guidelines (Budynas et. al., 2001). 
-          This baseline evaluation provides the reference from which further refinements will be introduced in later iterations of the chassis design.
+          Our objective is to ensure the redesigned chassis meets accepted safety-factor targets for preliminary structural design, typically around 2–3 for nominal loads (static vertical load and 1 g braking) and at least 1.0 for worst-case peak events (3 g bump), consistent with established mechanical design guidelines (Budynas et. al., 2001). 
+        </p>
+        <p>  
+          The implementation of the 3 load cases using our Chassis Iteration 3 design for FEA analysis can be seen in <i>Table 5.2</i>.This baseline evaluation provides the reference from which further refinements will be introduced in later iterations of the chassis design.
         </p>
          <image-component tag="image" source="assets/fea_loadcases.png"
-          subtitle="Table 5.1: Identified 3 Load Cases "></image-component>
+          subtitle="Table 5.2: FEA Analysis for 3 Load Cases (using Chassis Iteration 3) "></image-component>
 
           <h3>FEA Modelling Assumptions</h3>
           <ol>
@@ -400,7 +404,7 @@
               <p>Fork, swingarm, and damper treated as rigid attachments</p>
               Interfaces at the headstock, swingarm pivot, and suspension mounts are idealised as rigid to isolate the frame’s structural stiffness. 
               Physical torsion and bending tests similarly use stiff fixtures (Boccioni, 2005). 
-              The damper is assumed bottomed out and effectively rigid, representing a worst-case condition (WIT Press, 2005).
+              The damper is assumed bottomed out and effectively rigid, representing a worst-case condition (Öhlins, 2006).
             </li>
             <li>
               <p>Dynamic events approximated as equivalent static loads</p>
@@ -453,9 +457,19 @@
 
       <div id="sub-section-5-header-4"></div>
         <h3>5.4 FEA - Chassis Iteration Process </h3>
-           <image-component tag="image" source="assets/chassis_latest_fea_results.png"
-          subtitle="Table 5.??: Chassis Iteration 5 FEA results "></image-component>
+          <image-component tag="image" source="assets/chassis_feaiterations.png"
+            subtitle="Table 5.??: Chassis Iteration 5 FEA results "></image-component>
+          <p>
+            This shows us that the addition of the beams did improve the strength of the chassis, we will continue the iteration until a desirable FoS (>1) for the 3 g Bump load case is achieved.
+          </p>
+          <image-component tag="image" source="assets/chassis_feafinal.png"
+            subtitle="Table 5.??: Chassis Iteration 5 FEA results "></image-component>
+            
+          <image-component tag="image" source="assets/chassis_feafinalplot.png"
+            subtitle="Table 5.??: Chassis Iteration 5 FEA results "></image-component>
 
+          <image-component tag="image" source="assets/chassis_latest_fea_results.png"
+            subtitle="Table 5.??: Chassis Iteration 5 FEA results "></image-component>
 
       <div id="sub-section-5-header-5"></div>
         <h3>5.5 FEA - Conclusions </h3>
@@ -606,6 +620,7 @@
 
 </html>
         <!-- This is an example of how you might use the table component -->
-        <table-component subtitle="Table: Demo table">
+<!--        <table-component subtitle="Table: Demo table">
           <div id="table-1"></div>
         </table-component>
+      -->
