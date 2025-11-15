@@ -41,7 +41,7 @@
     <div class="team-member-wrapper">
       <team-member avatar="assets/mxranger.png" name="Lee Mun Xuan" department="Mechanical Engineering"
         year="A0257408Y"></team-member>
-      <team-member avatar="assets/yellowranger.png" name="Aditya Satish Nalini" department="Mechanical Engineering"
+      <team-member avatar="assets/adityaranger.png" name="Aditya Satish Nalini" department="Mechanical Engineering"
         year="1993"></team-member>
       <team-member avatar="assets/atifranger.png" name="Atif Nainar Hussain" department="Mechanical Engineering"
         year="A0252354J"></team-member>
@@ -225,22 +225,22 @@
         <h2>2. Methodology: Evaluation of Donor Components</h2>
         <p>
           This section provides a summary of our evaluation and decisions on whether each major component should be retained or redesigned for an electric conversion. 
-          The assessment considers design constraints, manufacturability, and ease of sourcing. 
+          The assessment in <i>Table 2.1</i> considers design constraints, manufacturability, and ease of sourcing. 
       
         </p>
         <p>
-          For the full systematic evaluation and decision-making process, see Appendix A.
+          For the full systematic evaluation and decision-making process, see <i>Appendix A</i>.
         </p>
 
         <image-component tag="image" source="assets/methodology_table_1.png"
-          subtitle="Table 1.1: Summary of existing major components evaluation"></image-component>
+          subtitle="Table 2.1: Summary of existing major components evaluation"></image-component>
         
         <p>
-          To ground this assessment, we conducted an on-site visit to Red Dot Mobility’s workshop, measured the donor components to verify the CAD drawings given, and photographed interfaces for later reference.
+          To ground this assessment, we conducted an on-site visit to Red Dot Mobility’s workshop, as seen in <i>Figure 2.1</i>, measured the donor components to verify the CAD drawings given and photographed interfaces for later reference.
         </p>
         
         <image-component tag="image" source="assets/RDM_ICE_workshop.png"
-          subtitle="Figure 1.1: Red Dot Mobility’s workshop, featuring their ICE sports bike"></image-component>
+          subtitle="Figure 2.1: Red Dot Mobility’s workshop, featuring their ICE sports bike"></image-component>
     
 
         
@@ -263,28 +263,51 @@
       </div>
 
       <div id="sub-section-3-header-1">
-        <h3>A. Chassis Concept Exploration</h3>
+        <h3>A. Chassis Concept Exploration</h3>  
         <p>
-          lalallalalalallalallaalala
+          The evaluation structure and material of chassis through a weighted decision matrix can be seen in <i>Table 3.1</i>
+        </p>
           <image-component tag="image" source="assets/chassis_conceptselection.png"
-          subtitle="Table 3.2: Chassis Structure and Material concept selection"></image-component>
+          subtitle="Table 3.1: Chassis Structure and Material concept selection"></image-component>
+        <p> 
+          The trellis frame is selected for its exemplary balance of structural rigidity, manufacturability, and cost-effectiveness, particularly suited to the unique requirements of electric motorcycle applications (Prabhu, K., & Juliet, J. M., 2017). 
+          This frame can be fabricated using straightforward tube welding processes that minimise production costs and complexity. 
+          The triangulated layout endows the chassis with outstanding torsional stiffness, which is essential for dynamic performance and safety, and the structure’s geometry can be systematically refined using iterative FEA to achieve optimal stress distribution and weight reduction (Kumar. et.al., 2018). 
+          Moreover, the open design of the trellis frame enables modular mounting and secure integration of core components such as the motor, battery, and controller, thereby enhancing flexibility for maintenance or system upgrades.
+        </p>
+        <p>
+          Aluminium is selected for the electric bike frame due to its combination of low weight, high corrosion resistance, and cost-effectiveness, which directly improve energy efficiency, riding range, and durability in daily use. 
+          Its fabrication processes are well understood and enable modular integration of batteries and electronic systems, while the material’s rigidity ensures responsive handling and long-term structural safety (Smith, J., & Lee, M., 2024).
         </p>
 
       <div id="sub-section-3-header-2">
         <h3>B. Fairing Concept Exploration</h3>
         <p>
-          llalalallalalalallalalalla
+          The evaluation structure and material of fairing through a weighted decision matrix can be seen in <i>Table 3.2</i>
+        </p>  
           <image-component tag="image" source="assets/fairing_conceptselection.png"
           subtitle="Table 3.2: Fairing Structure and Material concept selection"></image-component>
-
+        <p>
+          A full fairing is selected for its exceptional aerodynamic performance,which is vital for maximising efficiency and extending range in electric motorcycles (O’Meara, S., 2013), alongside its ability to provide comprehensive weather protection and improved rider comfort.
+          While it involves higher manufacturing complexity and cost, the gains in energy savings and overall riding experience justify its adoption in high-performance electric mobility applications.
+        </p>
+        <p>
+          Fibreglass is selected as the fairing material due to its excellent balance of strength and low weight, ease of manufacturing using low-cost tooling, aerodynamic smoothness, and superior repairability compared to plastics and carbon fibre.
+          Moreover, it is affordable and supports iterative prototyping (Viña, J., & García, J., 2020).
+        </p>
       <div id="sub-section-3-header-3">
         <h3>3.1 Concept Selection</h3>
         <p>
-          The design space for the chassis and fairing was systematically investigated using a Morphological Matrix. 
-          By mapping and combining functional alternatives, this method ensured that the final selected solution (shown in blue) reflects a thorough evaluation of viable configurations.
+          The design space for the chassis and fairing was systematically investigated using a Morphological Matrix in <i>Figure 3.3</i>. 
+          By mapping and combining functional alternatives, this method ensured that the selected solution (shown in blue) reflects a thorough evaluation of viable configurations.
         </p>
-        <image-component tag="image" source="assets/concept_selection_table_edited.png"
+          <image-component tag="image" source="assets/concept_selection_table_edited.png"
           subtitle="Table 3.3: Morphological Matrix for concept selection"></image-component>
+        <p>
+          A summary of the key justifications for our selected solution can be seen in <i>Table 3.4</i> 
+        </p>
+          <image-component tag="image" source="assets/concept_selection_justification.png"
+          subtitle="Table 3.4: Summary of justifications for final concept selection"></image-component>
 
 
       </div>
@@ -305,12 +328,13 @@
           To develop the initial chassis prototypes, the original ICE sports bike’s CAD model was used as the geometric baseline, with critical dimensions confirmed against the donor bike during our workshop session at Red Dot Mobility. These measurements established the swingarm pivot, rear damper mount, and front fork mount as the fixed anchor points of the vehicle. Because these interfaces are retained, the overall geometry—including wheelbase, rake, and trail—remains unchanged, preserving the motorcycle’s validated handling characteristics and dynamic performance. 
         </p>
         <p>   
-          Hence, the chassis is redesigned around these constraints whilst optimising packaging efficiency, manufacturability, and adequate structural support of the electric powertrain.
+          Accordingly, the chassis was redesigned within these constraints to balance packaging efficiency, manufacturability and structural support for the electric powertrain. 
+          Our 3 chassis design prototypes can be seen in <i>Figure 4.1</i>.
         </p>
          <image-component tag="image" source="assets/chassis_prototypes_horizontal.png"
           subtitle="Table 4.1: Chassis Design Prototypes"></image-component>
         <p>
-          Using Pugh Matrix, we compared the 3 chassis prototypes across five criteria.
+          Using Pugh Matrix, we compared the 3 chassis design prototypes across five criteria.
         </p>
         <image-component tag="image" source="assets/chassis_prototypes_pughmatrix.png"
           subtitle="Table 4.2: Weighted Pugh Matrix: Chassis Design Prototypes"></image-component>
@@ -321,16 +345,17 @@
         </p>
         <div id="sub-section-4-header-2">
         <h3> Iteration Process </h3>
-        <image-component tag="image" source="assets/prototype_iterations.png"
+        <image-component tag="image" source="assets/chassis_iterations_1.png"
           subtitle="Table 4.3: Iteration Process for Chassis and Fairing"></image-component>
         
         <p>
-          to edit****:After positioning the specified major components—motor, motor controller, and radiator—the remaining space for remaining components can be seen outlined in red. Approximating the battery enclosure as a rectangular prism gives maximum dimensions of 400 × 240 × 490 mm, or 47 L. Using the specified EP6575175VVP pouch-cell class and referencing typical pack-level volumetric energy densities for modern NCM pouch assemblies, ~180–250 Wh/L, (BloombergNEF, 2023; EVE Energy, 2023), this space is expected to support approximately 10–12 kWh of usable energy. This remains a preliminary estimate that will be refined once enclosure structures are finalised in Semester 2.
+          After positioning the specified major components—motor, motor controller, and radiator—the remaining space for remaining components can be seen in <i>Figure 4.1</i> (outlined in red). 
+          Approximating the battery enclosure as a rectangular prism gives maximum dimensions of 400 × 240 × 490 mm, or 47 L. Using the specified EP6575175VVP pouch-cell class and referencing typical pack-level volumetric energy densities for modern NCM pouch assemblies, ~180–250 Wh/L, (BloombergNEF, 2023; EVE Energy, 2023), this space is expected to support approximately 10–12 kWh of usable energy. This remains a preliminary estimate that will be refined once enclosure structures are finalised in Semester 2.
           In market context, a 10–12 kWh pack places the converted motorcycle above local commuter-class electric models such as the Scorpio Electric X1 and ION Mobility M1-S (4–6 kWh), but below premium electric sports motorcycles such as the Zero SR/F and Energica Ego+ (17–21 kWh). The partner-supplied EMRAX 228 motor—a compact axial-flux PMSM rated up to 124 kW and 220 Nm (EMRAX, 2024)—indicates that a mid-capacity pack within this range remains mechanically and thermally feasible for the intended performance envelope.
           These values serve as a work-in-progress basis for structural integration and will be updated as detailed design progresses.
         </p>
           <image-component tag="image" source="assets/chassis_integrated_components.png"
-          subtitle="Table 4.4: Chassis' Final Iteration with major components "></image-component>
+          subtitle="Figure 4.1: Chassis' Final Iteration with major components "></image-component>
       
       </div>
 
@@ -360,7 +385,7 @@
          <image-component tag="image" source="assets/fea_loadcases.png"
           subtitle="Table 5.1: Identified 3 Load Cases "></image-component>
 
-          <h3>Assumptions</h3>
+          <h3>FEA Modelling Assumptions</h3>
           <ol>
             <li> 
               <p>No residual welding distortion or temperature effects</p>
@@ -387,12 +412,31 @@
         
         <h3>Aluminium</h3>
 
+          <image-component tag="image" source="assets/aluminium_plots.png"
+          subtitle="Table 5.??: Aluminium FEA results "></image-component>
+
         <image-component tag="image" source="assets/aluminium_results.png"
           subtitle="Table 5.??: Aluminium FEA results "></image-component>
 
         <h3>Steel</h3>
         <image-component tag="image" source="assets/steel_results.png"
           subtitle="Table 5.??: Steel FEA results "></image-component>
+
+        <h3>Conclusion</h3>
+          <p>Using the 3 g bump load case, we compare the FoS plot of Chassis Iteration 3 using aluminium and steel respectively in <i>Figure XX</i> to assess the influence of material choice.</p>
+         <image-component tag="image" source="assets/material_summary.png"
+          subtitle="Table 5.??: FoS Plot for 3 g Bump load case"></image-component>
+
+          <p>
+            Side-by-side comparison of the FoS plots shows that the steel chassis is significantly more tolerant than the aluminium version. 
+            With steel, regions where the FoS drops below 1 are largely confined to the fork mount and swingarm pivot, whereas in aluminium almost the entire frame approaches or exceeds yield. 
+            Steel is therefore adopted for subsequent work, and the refinement effort is focused on improving the fork connection and swingarm mount regions.
+          </p>
+          <p>  
+            After switching to steel, further iterations were evaluated primarily under the most severe load case, the 3 g vertical bump. 
+            If the chassis can sustain this enveloping condition with a FoS greater than 1, the lower-magnitude static and 1 g braking loads will be satisfied with additional margin. 
+            A 3 g bump load is widely used in early vehicle chassis design as a representative worst case for pothole or curb impacts, so demonstrating FoS > 1 at 3 g provides confidence that the frame can withstand realistic peak events for static sizing checks (Government of South Australia Department for Infrastructure and Transport, 2024).
+          </p>
 
 
       <div id="sub-section-5-header-4"></div>
@@ -402,14 +446,29 @@
 
 
       <div id="sub-section-5-header-9"></div>
-        <h3>5.?? Summary </h3>
-
+        <h3>5.5 FEA - Conclusions </h3>
           <p>
-            lalalalalalalallala
+            The chassis went through numerous FEA-guided iterations, ranging from minor member adjustments to more substantial changes in triangulation and joint detailing. 
+            For clarity, <i>Figure 5.5</i> contrasts the initial Chassis Iteration 3 frame with our latest iteration.
+          </p>
+          <image-component tag="image" source="assets/fea_summary_chassis.png"
+          subtitle="Table 5.??: Summary of Chassis Iterations through FEA Analysis"></image-component>
+          <p>
+            As additional beams and gusset plates were introduced, the locations of stress hotspots shifted rather than remaining fixed. 
+            For example, an initial hotspot at the fork mount moved toward the tip of the newly added member and reduced in magnitude, reflecting improved load sharing. 
+            This behaviour is expected in a triangulated chassis, since slender beam members in a truss carry loads primarily through axial tension and compression instead of bending, which increases global stiffness for a given mass and channels forces along efficient load paths; 
+            this principle underpins space frame and trellis designs in structural engineering and motorcycle chassis practice (SteelConstruction.info; AISC, 2016). 
+            Gusset plates at tube junctions further enlarge the effective load-transfer area and smooth the transition of forces between intersecting members, reducing stress concentrations (Syed, 2011).
+          </p> 
+          <p>
+            By iteratively analysing and refining the frame in this way, non-working or lightly stressed members can be identified and removed, while material is added only where safety factor targets are not met. 
+            This keeps the chassis structurally efficient in terms of weight and supports cost-effective manufacture by limiting fabrication to members that provide clear structural benefit. 
+          </p>
+          <p>  
+            Overall, the latest chassis iteration achieves a stiffer and more structurally efficient chassis that meets the targeted safety factors with only minimal, well-targeted additions of material.
           </p>
           
-           <image-component tag="image" source="assets/fea_summary_chassis.png"
-          subtitle="Table 5.??: Summary of Chassis Iterations through FEA Analysis"></image-component>
+           
 
 
           <sl-divider></sl-divider>
@@ -452,6 +511,20 @@
           </p>
       <div id="sub-section-7-header-1">
         <h3>7.1 Fulfilment of Deliverables</h3>
+          <p>
+            At this stage, the project has met its key interim deliverables and is on schedule for prototype fabrication next semester. 
+            The fit and placement of major components within the chassis have been verified, FEA indicates the frame is structurally sound with a safety factor of at least 1 under the critical 3 g bump case, major components integration has been demonstrated, and the available battery volume falls within the energy range of comparable commercial models. 
+            A first-iteration full fairing has also been developed as a close-fitting wrap-around shell that hugs the chassis and major components, yielding a compact frontal area. 
+            By keeping the bodywork flush and avoiding unnecessary bulges, this concept is expected to limit drag through a low CdA, the main driver of aerodynamic resistance for motorcycles and bicycles (Cossalter, 2006). 
+            Simple weldments are used throughout, supporting small-batch manufacturability.
+          </p>
+          <p>
+            Taken together, these results show that the project has effectively fulfilled its interim goals and established a solid foundation for Semester 2. 
+            The next phase will focus on adding the mounting designs on chassis before fabrication, completing the detailed design of the fairing, and validating the current simulations. 
+            For the chassis, we plan to conduct basic stress–strain measurements using strain gauges to compare measured response against the FEA predictions. 
+            For the fairing, we will use CFD to assess the aerodynamic performance and verify that the proposed geometry achieves the intended low-drag behaviour. 
+            All of this will be carried out within the practical constraints of a single semester, limited manpower and a finite budget, with effort concentrated on delivering a buildable, testable prototype.
+          </p>
 
       <div id="sub-section-7-header-2">
         <h3>7.2 Gantt Chart</h3>
