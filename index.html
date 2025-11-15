@@ -387,7 +387,7 @@
           Our objective is to ensure the redesigned chassis meets accepted safety-factor targets for preliminary structural design, typically around 2–3 for nominal loads (static vertical load and 1 g braking) and at least 1.0 for worst-case peak events (3 g bump), consistent with established mechanical design guidelines (Budynas et. al., 2001). 
         </p>
         <p>  
-          The implementation of the 3 load cases using our Chassis Iteration 3 design for FEA analysis can be seen in <i>Table 5.2</i>.This baseline evaluation provides the reference from which further refinements will be introduced in later iterations of the chassis design.
+          The implementation of the 3 load cases using our Chassis Iteration 3 design for FEA analysis can be seen in <i>Table 5.2</i>. This baseline evaluation provides the reference from which further refinements will be introduced in later iterations of the chassis design.
         </p>
          <image-component tag="image" source="assets/fea_loadcases.png"
           subtitle="Table 5.2: FEA Analysis for 3 Load Cases (using Chassis Iteration 3) "></image-component>
@@ -416,32 +416,43 @@
 
       <div id="sub-section-5-header-3"></div>
         <h3>5.3 FEA - Material Selection </h3>
-        
-        <h3>Aluminium (Yield Strength: 5.51x10^7Pa)</h3>
-
+        This subsection explores the impact of chassis material, and our material choice of steel justification.
+        <h3>Aluminium (Yield Strength: 5.51x10<sup>7</sup>Pa)</h3>
+          <p>
+          Using the 3 load cases, we conducted FEA analysis on the Chassis Iteration 3 design with aluminium material as seen in <i>Table 5.3</i>.
+          </p>
           <image-component tag="image" source="assets/aluminium_plots.png"
-          subtitle="Table 5.??: Load cases blabla "></image-component>
-          
+          subtitle="Table 5.3: Stress Plot in 3 Load Cases for Chassis Iteration 3 (Aluminium) "></image-component>
+          <p></p>
           <image-component tag="image" source="assets/aluminium_results.png"
-          subtitle="Table 5.??: Aluminium FEA results "></image-component>
+          subtitle="Table 5.4: Chassis Iteration 3 (Aluminium) FEA results "></image-component>
 
           <p>
-            The FoS obtained when using aluminum is undesirable with all of them being less than 0.1 showing significant yielding even in the static simulation. 
+            As seen in <i>Table 5.4</i>, the FoS for aluminium chassis is undesirable with all of them being less than 0.1 showing significant yielding even in the static simulation. 
             The safety factor plot from the 3G bump case shows many portions of the base chassis experiencing stresses more than yield strength hence yielding. 
             Thus, another material is considered since there is too much yielding. 
           </p>
 
-        <h3>Steel</h3>
-        <image-component tag="image" source="assets/steel_cases.png"
-          subtitle="Table 5.??: Steel cases blabla "></image-component>
+        <h3>Steel (Yield Strength: 4.60x10<sup>8</sup>Pa)</h3>
+        <p>
+          Using the 3 load cases, we conducted FEA analysis on the Chassis Iteration 3 design with steel material as seen in <i>Table 5.5</i>.
 
+        </p>
+        <image-component tag="image" source="assets/steel_cases.png"
+          subtitle="Table 5.5: Stress Plot in 3 Load Cases for Chassis Iteration 3 (Aluminium)"></image-component>
+
+          <p></p>
         <image-component tag="image" source="assets/steel_results.png"
-          subtitle="Table 5.??: Steel FEA results "></image-component>
+          subtitle="Table 5.6: Chassis Iteration 3 (Aluminium) FEA results"></image-component>
+          <p>
+            As seen in <i>Table 5.6</i>, the static case achieves a FoS of 1.64 so the steel chassis remains elastic under its own weight. 
+            Under 1 g braking and 3 g bump the safety factor is below 1 and indicates local yielding concentrated at highly loaded joints such as the fork and swingarm mounts, thus, helping us narrow our area of focus for future iterations.
+          </p>
 
         <h3>Conclusion</h3>
-          <p>Using the 3 g bump load case, we compare the FoS plot of Chassis Iteration 3 using aluminium and steel respectively in <i>Figure XX</i> to assess the influence of material choice.</p>
+          <p>Using the 3 g bump load case, we compare the FoS plot of Chassis Iteration 3 using aluminium and steel respectively in <i>Figure 5.7</i> to assess the influence of material choice.</p>
          <image-component tag="image" source="assets/material_summary.png"
-          subtitle="Table 5.??: FoS Plot for 3 g Bump load case"></image-component>
+          subtitle="Table 5.7: Almunium vs Steel: FoS Plot for 3 g Bump load case"></image-component>
 
           <p>
             Side-by-side comparison of the FoS plots shows that the steel chassis is significantly more tolerant than the aluminium version. 
@@ -457,28 +468,29 @@
 
       <div id="sub-section-5-header-4"></div>
         <h3>5.4 FEA - Chassis Iteration Process </h3>
+        <p>This subsection explores our FEA-guided iteration process of our chassis design. 
+          A summary of our key takeaways can be seen in <i>Table 5.8</i>.
+        </p>
+        <p>
+          Notably, the addition of the beams improved the strength of the chassis and we will continue the iteration process until a desirable FoS (>1) for the 3 g Bump load case is achieved.
+        </p>
           <image-component tag="image" source="assets/chassis_feaiterations.png"
-            subtitle="Table 5.??: Chassis Iteration 5 FEA results "></image-component>
-          <p>
-            This shows us that the addition of the beams did improve the strength of the chassis, we will continue the iteration until a desirable FoS (>1) for the 3 g Bump load case is achieved.
-          </p>
-          <image-component tag="image" source="assets/chassis_feafinal.png"
-            subtitle="Table 5.??: Chassis Iteration 5 FEA results "></image-component>
-            
-          <image-component tag="image" source="assets/chassis_feafinalplot.png"
-            subtitle="Table 5.??: Chassis Iteration 5 FEA results "></image-component>
-
+            subtitle="Table 5.8: FEA-guided chassis design improvements "></image-component>
+          <p>After numerous iterations, we finally obtained a desirable chassis design as seen in <i>Figure 5.1.</i></p>
+          <image-component tag="image" source="assets/a_finalfea.png"
+            subtitle="Figure 5.1: Final Iteration of Chassis model, and its stress plot (left to right) "></image-component>
+          <p></p>
           <image-component tag="image" source="assets/chassis_latest_fea_results.png"
-            subtitle="Table 5.??: Chassis Iteration 5 FEA results "></image-component>
-
+            subtitle="Table 5.9: Chassis Final Iteration 5 FEA results "></image-component>
+          <p>As seen in <i>Table 5.9</i>, FoS have improved significantly after the changes and are all within the acceptable criteria of more than 1thus we could end the iteration process. </p>
       <div id="sub-section-5-header-5"></div>
         <h3>5.5 FEA - Conclusions </h3>
           <p>
             The chassis went through numerous FEA-guided iterations, ranging from minor member adjustments to more substantial changes in triangulation and joint detailing. 
-            For clarity, <i>Figure 5.5</i> contrasts the initial Chassis Iteration 3 frame with our latest iteration.
+            For clarity, <i>Figure 5.10</i> contrasts the initial Chassis Iteration 3 frame with our latest iteration.
           </p>
           <image-component tag="image" source="assets/fea_summary_chassis.png"
-          subtitle="Table 5.??: Summary of Chassis Iterations through FEA Analysis"></image-component>
+          subtitle="Table 5.10: Summary of Chassis Iterations through FEA Analysis"></image-component>
           <p>
             As additional beams and gusset plates were introduced, the locations of stress hotspots shifted rather than remaining fixed. 
             For example, an initial hotspot at the fork mount moved toward the tip of the newly added member and reduced in magnitude, reflecting improved load sharing. 
@@ -569,18 +581,92 @@
       <h2>References</h2>
       <ul>
         <li>
-          Brody, J. E. (2007, December 11). Mental reserves keep brain agile. The New York Times. Retrieved from
-          http://www.dowjones.com/factiva/
-        </li>
-        <li>
-          Chamberlin, J., Novotney, A., Packard, E., & Price, M. (2008, May). Enhancing worker well-being: Occupational
-          health psychologists convene to share their research on work, stress, and health. Monitor on Psychology,
-          39(5), 26-29.
-        </li>
-        <li>
-          Jones, T. J., & Fields, N. (2003). Emotional quotient and personality. E-Journal of Applied Psychology, 2(2),
-          38-45. Retrieved from http://ejournalappliedpsyc/index.php/ejap
-        </li>
+About Us. Ifyni. (n.d.). https://www.ifyni.com/aboutus
+</li>
+<li>
+Bocciolone, M., Cheli, F., Pezzola, M., & Viganò, R. (2005). Static and dynamic properties of a motorcycle frame: Experimental and numerical approach. WIT Transactions on Modelling and Simulation, 41, 517–526. https://doi.org/10.2495/CMEM050501
+</li>
+<li>
+Ching Pang, G., & Weng Chun, T. (2023). An in-depth analysis of lightweight chassis design for electric scooters using trellis frame structures. Journal of Innovation and Technology, 2023(1). https://doi.org/10.61453/joit.v2023no30
+</li>
+<li>
+Cossalter, V., Lot, R., & Massaro, M. (2014). Motorcycle dynamics. In Modelling, simulation and control of two-wheeled vehicles (pp. 1–42). https://doi.org/10.1002/9781118536391.ch1
+</li>
+<li>
+Dassault Systèmes. (2025). Design check for a mixed mesh assembly. SOLIDWORKS Simulation Help. https://help.solidworks.com/2025/English/simconntutorial/c_Overview_DesignCheck_MixedMesh.htm
+</li>
+<li>
+Dassault Systèmes. (2025). Distributed coupling for remote load and mass. SOLIDWORKS Simulation Help. https://help.solidworks.com/2025/English/SolidWorks/cworks/c_distributed_coupling.htm
+</li>
+<li>
+Dassault Systèmes. (2025). Distributed Mass PropertyManager. SOLIDWORKS Simulation Help. https://help.solidworks.com/2025/english/SolidWorks/cworks/IDH_HELP_DISTRIBUTED_MASS.htm
+</li>
+<li>
+Dassault Systèmes. (2025). Performing analysis using beams or trusses. SOLIDWORKS Simulation Help. https://help.solidworks.com/2025/English/SolidWorks/cworks/t_Performing_Analysis_Using_Beams_or_Trusses.htm
+</li>
+<li>
+Ecker, H. (2001). Braking deceleration of motorcycle riders. International Motorcycle Safety Conference, Orlando, FL. https://msf-usa.org/wp-content/uploads/2023/03/braking-deceleration-of-motorcycle-riders.pdf
+</li>
+<li>
+Electric vehicles. LTA. (n.d.). https://www.lta.gov.sg/content/ltagov/en/industry_innovations/technologies/electric_vehicles.html
+</li>
+<li>
+FACT.MR. (2025, January 7). E-bike motor market is expected to reach US$ 150.3 billion by 2034, growing at 16.5% CAGR | Fact.MR report. Yahoo! Finance. https://finance.yahoo.com/news/e-bike-motor-market-expected-120000519.html
+</li>
+<li>
+Ferdaus, F., Raghukiran, N., Vijaykumar, & Karthikeyan. (2021). Aerodynamic performance improvement by streamlining the front fairing of a racing vehicle. IOP Conference Series: Materials Science and Engineering, 1128(1), 012007. https://doi.org/10.1088/1757-899X/1128/1/012007
+</li>
+<li>
+Government of South Australia, Department for Infrastructure and Transport. (2024). Requirements for individually constructed vehicles. https://www.sa.gov.au/topics/driving-and-transport/vehicles/vehicle-standards-and-modifications/individually-constructed-vehicles/requirements-for-individually-constructed-vehicles
+</li>
+<li>
+Hooper, J. M., Williams, D., Roberts-Bee, K., McGordon, A., Whiffin, P., & Marco, J. (2023). Defining a vibration test profile for assessing the durability of electric motorcycle battery assemblies. Journal of Power Sources, 557, 232541. https://doi.org/10.1016/j.jpowsour.2022.232541
+</li>
+<li>
+Ifyni. (n.d.). Energica by Ifyni official website. https://energica.ifyni.com/
+</li>
+<li>
+ION Mobility. (n.d.). ION Mobility official website. https://ionmobility.com/
+</li>
+<li>
+Kulkarni, C., & Kanthale, V. S. (2024). Design and development of chassis frame using trellis structure for an electric motorcycle. Journey of Electrical Systems, 20(10). https://journal.esrgroups.org/jes/article/view/5858
+</li>
+<li>
+Martínez Reategui, C., León Japa, R. S., & Jurado Melguizo, F. (2025). Optimized fairing development for electric motorcycle using CFD simulation and finite element analysis (FEA). Enfoque UTE, 16(3), 25–36. https://doi.org/10.29019/enfoqueute.1173
+</li>
+<li>
+Nadikoppula, P., & Prasada Rao, M. Y. (2020). Static analysis and geometry optimization of rear wheel trailing arm. International Research Journal of Engineering and Technology (IRJET), 7(7), 1783–1789. https://www.irjet.net/archives/V7/i7/IRJET-V7I706.pdf
+</li>
+<li>
+Öhlins Racing AB. (2006). Owner’s manual: Road & Track cartridge kit (OM_07295-21). https://ohlins.com/storage/42CA911326FF1C91565F4A7C7FD6659ACB543A574C07A2BA4F2F7AC505BDCF7F/e9659e3bdd514033bdd41a1329cbd3fa/pdf/media/569fdfd018d84def825bd17f0b0dc0ab/OM_07295-21.pdf
+</li>
+<li>
+Scorpio Electric Pte Ltd. (n.d.). Scorpio Electric official website. https://www.scorpioelectric.com/
+</li>
+<li>
+Shigley, J. E., & Mischke, C. R. (2001). Mechanical engineering design (6th ed.). McGraw-Hill. https://www.amazon.sg/Mechanical-Engineering-Design-Charles-Mischke/dp/0072373016
+</li>
+<li>
+SteelConstruction.info. (n.d.). Trusses. https://steelconstruction.info/Trusses
+</li>
+<li>
+Syed, Z. I. (2011). Stress analysis of welded gusseted frames (Master’s thesis, Iowa State University). Iowa State University Digital Repository. https://dr.lib.iastate.edu/server/api/core/bitstreams/096ce7f3-9dc9-46dd-a110-7afd1247a498/content
+</li>
+<li>
+TWI Global. (n.d.). Residual stress — frequently asked questions. https://www.twi-global.com/technical-knowledge/faqs/residual-stress
+</li>
+<li>
+Viña, J., Bonhomme, J., Mollón, V., Viña, I., & Argüelles, A. (2020). Mechanical properties of fibreglass and carbon-fibre reinforced polyetherimide after twenty years of outdoor environmental aging in the city of Gijón (Spain). Composites Communications, 22, 100522. https://doi.org/10.1016/j.coco.2020.100522
+</li>
+<li>
+Wiński, K., & Piechna, A. (2022). Comprehensive CFD aerodynamic simulation of a sport motorcycle. Energies, 15(16), 5920. https://doi.org/10.3390/en15165920
+</li>
+<li>
+WIT Press. (2005). Static and dynamic properties of a motorcycle frame: Experimental and numerical approach [conference page]. https://www.witpress.com/elibrary/wit-transactions-on-modelling-and-simulation/41/15248
+</li>
+<li>
+Zero motorcycles. MAH.COM.SG. (n.d.). https://mah.com.sg/brands-zero-motorcycles/
+</li>
       </ul>
     </div>
   </div>
