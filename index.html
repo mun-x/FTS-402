@@ -410,15 +410,24 @@
       <div id="sub-section-5-header-3"></div>
         <h3>5.3 FEA - Material Selection </h3>
         
-        <h3>Aluminium</h3>
+        <h3>Aluminium (Yield Strength: 5.51x10^7Pa)</h3>
 
           <image-component tag="image" source="assets/aluminium_plots.png"
+          subtitle="Table 5.??: Load cases blabla "></image-component>
+          
+          <image-component tag="image" source="assets/aluminium_results.png"
           subtitle="Table 5.??: Aluminium FEA results "></image-component>
 
-        <image-component tag="image" source="assets/aluminium_results.png"
-          subtitle="Table 5.??: Aluminium FEA results "></image-component>
+          <p>
+            The FoS obtained when using aluminum is undesirable with all of them being less than 0.1 showing significant yielding even in the static simulation. 
+            The safety factor plot from the 3G bump case shows many portions of the base chassis experiencing stresses more than yield strength hence yielding. 
+            Thus, another material is considered since there is too much yielding. 
+          </p>
 
         <h3>Steel</h3>
+        <image-component tag="image" source="assets/steel_cases.png"
+          subtitle="Table 5.??: Steel cases blabla "></image-component>
+          
         <image-component tag="image" source="assets/steel_results.png"
           subtitle="Table 5.??: Steel FEA results "></image-component>
 
@@ -561,13 +570,23 @@
 
 <sl-divider></sl-divider>
 
-
-      <h3>Appendix __: Donor Components Detailed Evaluation</h3>
+    
+      <h3>Appendix A: Donor Components Detailed Evaluation</h3>
         <image-component tag="image" source="assets/appendix_donor_components.png"
           subtitle=" "></image-component>
-      <h3>Appendix __: FEA Beam, Shell, Mixed Mesh</h3>
+
+        <h3>Appendix B: Theoretical Chassis Design </h3>
+        <image-component tag="image" source="assets/appendix_chassis.png"
+          subtitle=""></image-component>
+
+      <h3>Appendix C: FEA Beam, Shell, Mixed Mesh</h3>
         <image-component tag="image" source="assets/appendix_beam_mesh.png"
           subtitle=" "></image-component>
+
+      <h3>Appendix D: Welding and Jigs</h3>
+        <image-component tag="image" source="assets/appendix_welding.png"
+          subtitle=" "></image-component>
+
 
 
 
